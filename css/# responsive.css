@@ -1,0 +1,47 @@
+@media screen and (max-widht:414px){
+    /* instructions */
+
+        #presentation.flex{display:block;padding: 0.8em;}
+        .flex{display: block;}
+
+        
+        #slider{padding:0;display: none;}
+            #boutique div:first-child img {
+                border-radius:100px 0}
+
+            #boutique div:first-child img {
+                border-radius: 0 100px}
+            }
+
+                /* sur les ecrans 414px et768px */
+
+                @media screen and (min-width:600px) and
+                (max-width:768px){
+                
+          section {padding:1em;}
+          #slider{padding:0;}
+          #slider h1,#slider h2{padding:1em;}
+
+          #presentation.flex{display:block;}
+          #presentation div{margin-bottom:1em;}
+          #produits article{flex:0 0 35%}
+
+          #infos{display: block;text-align: center;}
+          #action div {flex: 0 0.5em;}
+          #concept div:nth-child(2) {
+                    padding:0 0.5em;}
+        #boutique div{flex:0 0 40%}
+        #boutique div:first-child img {
+            border-radius: 60px 0px;
+        }
+        #boutique div:last-child {
+            display: none;
+        }
+        #action{align-items: center;}
+        #slider button {width: 30%;}
+        
+        
+          }
+@media all and (max-widht:768px){
+    #compteur{display: none;}
+}

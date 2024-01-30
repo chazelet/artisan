@@ -1,0 +1,209 @@
+/* font-family: 'Cinzel',serif;
+font-family: 'Open Sans',sans-serif;
+
+#eccdb4 : beige clair
+#f0edd4 : beige foncé
+#f9fbe7 : beige clair
+#252B48  : bleu foncé
+*/
+body{margin:0;font-family: 'Open Sans', sans-serif;color:#252B48
+; padding-top:80px;}
+
+h1,h2,h3,h4,h5,h6{font-family: 'Cinzel', serif;}
+/* LIENS */
+a{text-decoration: none;color:inherit;}
+/*a:link{color:red}
+a:visited{color:#ccc;font-weight:bold;}
+a:hover{color:indianred;}
+a:active {color: aqua;background-color: #fff;
+}*/
+
+
+/* lien non visité : a:link
+lien visité            a:visited
+lien actif             a:active
+lien passage de la souris a:hover
+*/
+/* FIn des LIENS */
+.flex{display: flex;}
+.overlay::before{
+
+    width:100%;height:100%;
+    position:absolute;content:"";
+
+    background:rgba(0,0,0,0.4);
+    z-index:0;
+}
+
+
+    /* MASQUE*/
+    .mask1{
+        mask-image:url(../images/shape_three.svg);
+        -webkit-mask-image:url(../images/shape_one.svg);
+        mask-repeat:space;
+        -webkit-mask-repeat: space;
+        mask-size:100%;
+        -webkit-mask-size: 100%;
+        mask-position:left top;
+        -webkit-mask-position:left bottom;
+        mask-mode:alpha;
+        -webkit-mask-mode:alpha;
+        mask-repeat:space;
+        mask-size:100%;
+        mask-position:left bottom;
+        mask-mode:alpha;
+    }
+
+
+/* HEADER */
+header{justify-content: center;}
+ul{list-style-type:none;
+    justify-content: space-around;}
+nav{flex: 0 0 35%;}
+
+section{padding:3em 0;}
+/* menu à l'hoizontal*/
+/*li{display:inline-flex}*/
+
+/* SLIDER */
+#slider{background:url(../images/open-space-interior-small.jpg) no-repeat center center scroll #fff;
+height:500px;
+background-size:cover;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+position:relative;
+color:#eccdb4;
+}
+
+#slider h1,#slider p,#slider button,#slider h2{position:relative;}
+
+#slider h1{font-size:2em;}
+#slider button{width:15%;}
+
+/* PRESENTATION */
+
+#presentation {justify-content: center;}
+#presentation div{flex:0 0 20%;}
+#presentation h3{padding-right:1em;}
+
+/* PRODUITS */
+
+#produits{flex-wrap: wrap;justify-content: center;background-color: #f5ede6;}
+#produits img{width:100%;border-radius:13.750em 13.750em 0 0;}
+#produits article{flex: 0 0 20%; margin: 2em 3em;text-align: center;}
+#produits h3{font-size: 1em;margin-top: 1em;}
+
+/* SERVICES */
+#services{text-align: center;   }
+#services-article{justify-content: center;flex-wrap: wrap;}
+
+#services-article article{flex:0 0 20%;margin:2em 3em;}
+/* Pseudo classes */
+/*#services article:first-child{color:#b2748c;font-weight:bold;}
+#services article:last-child{color:violet;font-weight: bold;}*/
+
+/* CONCEPT */
+#concept{background-color:#f5ede6;padding:0;}
+#concept img{width:100%;}
+#concept div{text-align: center;}
+
+#concept div:nth-child(2){padding: 10% 0;}
+/* pseudo elements ::*/
+h4::first-letter{font-size:2em;color:#b2748c;}
+h3::first-line{font-size:1.5em;color:#b2748c;}
+
+/* BOUTIQUE */
+#boutique{justify-content: center;}
+#boutique img{width:100%;}
+#boutique div{flex:0 0 20%;margin: 2em 3em;}
+/* 1ere image du 1er enfant (div) : border-radius: 220px 0 220px 0;*/
+#boutique div:first-child img{border-radius: 220px 0 220px 0;}
+
+/* 1eme image du dernier enfant ou de 2eme : border-radius: 0 220px 0 220px;*/
+#boutique div:last-child img{border-radius: 0 220px 0 220px;}
+/*#boutique div:nth-child(2) img{border-radius: 0 220px 0 220px;}*/
+
+
+/* TEMOIGNAGES */
+
+#temoignages{
+    background:url(../images/sunlight-art-drawing-painting-studio-lifestyle-woman-work-artist-art-studio-small.jpg) no-repeat center center scroll #000;
+    background-size:cover;
+    position: relative;
+    padding:0;
+}
+#temoignages h4{position: relative;color: #f0edd4;text-align: center;}
+#temoignages article{background-color:#fff;color:#8f8f8f;position:relative;margin:2em 2em;flex: 0 0 30%;padding: 2em;text-align: center;
+    border-radius: 1em;}
+#temoignages .flex{flex-wrap: wrap; justify-content: center;}
+#temoignages .flex1{display: flex;justify-content: center;}
+#temoignages .flex1 img{width:80px;border-radius:50%;}
+
+#temoignages .photo {margin-right:2em;}
+
+/* ACTION */
+
+#action{justify-content: center;}
+#action div{flex :0 0 30%}
+#action .btn-contact{text-align: center;}
+
+/* INFOS */
+#infos{justify-content: center;background-color: #f5ede6;}
+#infos div{flex : 0 0 20%;margin:2em;}
+
+#infos i{margin-right:1em;color:#b2748c;}
+#infos i:hover {color: indianred}
+#infos p {text-align:justify;}
+footer{background-color: #b2748c;padding:1em;text-align: center; color:#fff;}
+
+/* PAGE ABOUT */
+/* COMPTEUR */
+#compteur{background:url(../images/mirror-room-makeup-small.jpg)
+no-repeat 0 bottom scroll #000;
+position: relative;
+padding: 0;
+background-size: cover;
+}
+
+#compteur div{color:#fff;
+font-weight: bold;
+font-size: 2em;position: relative;text-align: center;
+padding:3em;
+}
+
+#about-action div:nth-child(2){
+    text-align: center;
+}
+/* presentation about*/
+#presentation-about{background:url(../images/interior-of-a-shop-selling-clothes-and-accessories-small.jpg)
+no-repeat scroll center center #000;
+background-size:cover;
+position: relative;padding:0;
+height:250px;
+}
+
+#presentation-about h1{color:#fff;position:relative;}
+
+/*PAGE CONTACT */
+.vignette{widht:50%;}
+
+/* BOOTSTRAP */
+.btn-primary {background-color:#b2748c;border-color:#905c70;}
+
+.btn-primary:hover{
+    background-color: #905c70;
+    border-color: #b2748c;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color:#fff ;
+    background-color: #b2748c;}
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color:#eccdb4;
+    background-color: #8f8f8f;
+}
+.bg-light{background-color:#8f8f8f!important;}
